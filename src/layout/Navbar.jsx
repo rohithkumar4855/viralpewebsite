@@ -133,6 +133,11 @@ export default function Navbar() {
                                   navigate("/contactus");
                                   setOpenDropdown(null);
                                 }
+                                 if (menuItem.name.trim() === "Management") {
+                                  navigate("/management");
+                                  setOpenDropdown(null);
+                                }
+                                
                               }
                             }}
                             className="flex items-center justify-between px-6 py-[14px] hover:bg-[#FFEDEE] cursor-pointer transition-colors min-w-[280px]"
@@ -191,7 +196,8 @@ export default function Navbar() {
       </div>
 
       {/* Desktop Login */}
-      <button className="hidden md:block login-btn font-semibold py-[12px] px-[24px] bg-(--primary-red) text-white cursor-pointer rounded-lg hover:opacity-90 transition-opacity">
+      <button onClick={() => navigate("/login")}
+      className="hidden md:block login-btn font-semibold py-[12px] px-[24px] bg-(--primary-red) text-white cursor-pointer rounded-lg hover:opacity-90 transition-opacity">
         Login
       </button>
 
