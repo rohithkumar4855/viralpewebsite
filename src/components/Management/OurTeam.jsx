@@ -2,7 +2,7 @@ import { useState } from "react";
 import Container from "../../layout/Container";
 import { Search } from "lucide-react";
 import image from "../../../public/images/Owner.png";
-import image2 from "../../../public/images/Owner2.png";
+import image2 from "../../../public/images/owner2.png";
 
 export default function Management() {
     const teamMembers = [
