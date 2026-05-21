@@ -13,7 +13,7 @@ const WalletandEarnings = ({ icon, title, amount}) => {
                         className="object-contain w-9.5 h-9.5"
                     />
                 </div>
-                <h4 className="text-[11.15px] truncate font-semibold text-[#6F0014] uppercase">
+                <h4 className="text-[11.15px] font-semibold text-[#6F0014] uppercase">
                     {title}
                 </h4>
             </div>
@@ -31,7 +31,7 @@ const WalletandEarnings = ({ icon, title, amount}) => {
 export default function Home() {
     return (
         <div className="w-full  max-w-[1217px] max-h-[240px] mx-auto mt-[32px]   bg-white rounded-[20px] p-8 md:p-10 shadow-sm border border-gray-100">
-            <div>
+            <div className="mb-6">
                 <h1 className="text-[24px] font-semibold">Wallet & Earnings</h1>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8 md:gap-6 ">

@@ -1,6 +1,6 @@
 import React from 'react';
 import cashback from "../../../public/images/cashbacklogo.png";
-import gift from "../../../public/images/gift2.png";
+import gift from "../../../public/images/giftbox.svg";
 
 const PromotionalCards = () => {
   return (

@@ -156,7 +156,7 @@ export default function Navbar() {
                                   setOpenDropdown(null);
                                 }
                                 if (menuItem.name.trim() === "Contact Us") {
-                                  navigate("/contactus");
+                                  navigate("/about-us");
                                   setOpenDropdown(null);
                                 }
                                  if (menuItem.name.trim() === "Management") {
@@ -265,7 +265,7 @@ export default function Navbar() {
                               setIsOpen(false);
                             }
                             if (menuItem.name.trim() === "Contact Us") {
-                              navigate("/contact-us");
+                              navigate("/about-us");
                               setIsOpen(false);
                             }
                           }

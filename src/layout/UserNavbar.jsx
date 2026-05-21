@@ -32,7 +32,7 @@ export default function UserNavbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white z-50 shadow-sm font-sans">
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-sm font-sans">
       
       {/* --- TOP ROW --- */}
       {/* Added lg:px-[115px] to match your requested padding on large screens */}
