@@ -23,12 +23,7 @@ import ticket from "../../../public/images/ticket.svg";
 import wallet from "../../../public/images/wallet.svg";
 import myntra from "../../../public/images/myntra.png";
 import starbucks from "../../../public/images/starbucks.png";
-import lock from  "../../../public/images/lock.png";
-import headphones from  "../../../public/images/headphones.png";
-
-
-
-
+import lock from "../../../public/images/lock.png";
 
 export default function CashbackCardList() {
   const location = useLocation();
