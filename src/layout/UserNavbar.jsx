@@ -1,5 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import vouchers from "../../public/images/vouchers.svg"
+import moneyreceive from "../../public/images/money-receive.svg";
+import moneysend from "../../public/images/money-send.svg";
+import dthicon from "../../public/images/dthicon.svg";
+import fastagicon from "../../public/images/fasttag.svg";
+import refer from "../../public/images/refericon.svg";
+import transcations from "../../public/images/transcations.svg";
+
+
 import { 
   Menu, 
   Search, 
@@ -22,13 +31,31 @@ export default function UserNavbar() {
   // Bottom row menu items - Added 'path' for navigation
   const secondaryNavItems = [
     { name: "All", icon: <Menu size={18} />, path: "/all-services" },
-    { name: "Vouchers", icon: <Ticket size={18} />, path: "/Vouchers" },
-    { name: "Prepaid Recharge", icon: <Smartphone size={18} />, path: "/prepaid" },
-    { name: "Postpaid Recharge", icon: <Smartphone size={18} />, path: "/postpaid" },
-    { name: "DTH Recharge", icon: <Satellite size={18} />, path: "/dth" },
-    { name: "FASTag Recharge", icon: <Car size={18} />, path: "/fastag" },
-    { name: "Refer & Earn", icon: <Gift size={18} />, path: "/refer-and-earn" },
-    { name: "Transactions", icon: <FileText size={18} />, path: "/transactions" },
+    { name: "Vouchers",
+      icon: <img src={vouchers} alt="Vouchers" className="w-[20px] h-[20px]" />,
+    path: "/Vouchers" },
+    {
+       name: "Prepaid Recharge",
+    icon: <img src={moneyreceive} alt="Vouchers" className="w-[20px] h-[20px]" />,
+    path: "/prepaid" },
+    { name: "Postpaid Recharge", 
+      icon: <img src={moneysend} alt="Vouchers" className="w-[20px] h-[20px]" />,
+      path: "/postpaid" },
+    { name: "DTH Recharge", 
+           icon: <img src={dthicon} alt="Vouchers" className="w-[20px] h-[20px]" />,
+
+      path: "/dth" },
+    { name: "FASTag Recharge", 
+           icon: <img src={fastagicon} alt="Vouchers" className="w-[20px] h-[20px]" />,
+
+      path: "/fastag" },
+    { name: "Refer & Earn", 
+                icon: <img src={refer} alt="Vouchers" className="w-[20px] h-[20px]" />,
+
+       path: "/refer-and-earn" },
+    { name: "Transactions", 
+           icon: <img src={transcations} alt="Vouchers" className="w-[20px] h-[20px]" />,
+      path: "/transactions" },
   ];
 
   return (

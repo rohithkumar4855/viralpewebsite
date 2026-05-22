@@ -192,17 +192,17 @@ export default function Vouchers() {
             </div>
 
             {/* MAIN LAYOUT WRAPPER */}
-            <div className="max-w-[1215px] mx-auto px-4 py-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-9 gap-6 items-start">
+            <div className="max-w-[1215px]  mx-auto px-4 py-6">
+                <div className="flex flex-row  md:grid-cols-3 lg:grid-cols-9 gap-6 items-start">
 
                     {/* COLUMN 1: LEFT SIDEBAR (FILTERS & WHY VIRALPE) */}
-                    <div className="lg:col-span-3 flex flex-col gap-6 w-full">
+                    <div className="items-center lg:col-span-3  max-w-[291px] w-full flex flex-col gap-2 ">
                         <aside className="w-full bg-white rounded-[28px] border border-gray-100 p-5 shadow-sm select-none">
                             <div className="flex items-center justify-between mb-5">
                                 <h2 className="text-xl font-bold text-gray-900">Filter</h2>
                                 <button
                                     onClick={handleClearAll}
-                                    className="text-l font-medium text-red-700 hover:text-red-800 transition-colors"
+                                    className="text-l font-medium text-(--primary-red) hover:text-[#901C27]-800 transition-colors"
                                 >
                                     Clear All
                                 </button>
@@ -212,7 +212,7 @@ export default function Vouchers() {
                             <div className="mb-4">
                                 <button onClick={() => toggleSection('brands')} className="flex items-center justify-between w-full py-2 text-left">
                                     <span className="text-[15px] font-bold text-gray-900">
-                                        Brands <span className="text-red-700 font-semibold">({String(selectedBrands.length).padStart(2, '0')})</span>
+                                        Brands <span className="text-[#901C27]-700 font-semibold">({String(selectedBrands.length).padStart(2, '0')})</span>
                                     </span>
                                     {sections.brands ? <ChevronUp className="w-4 h-4 text-gray-800 stroke-[2.5]" /> : <ChevronDown className="w-4 h-4 text-gray-800 stroke-[2.5]" />}
                                 </button>
@@ -251,7 +251,7 @@ export default function Vouchers() {
                             <hr className="border-gray-100 my-3" />
 
                             {/* Section 2: Discount */}
-                            <div className="mb-4">
+                            <div className="mb-4 ">
                                 <button onClick={() => toggleSection('discount')} className="flex items-center justify-between w-full py-2 text-left">
                                     <span className="text-[15px] font-bold text-gray-900">Discount</span>
                                     {sections.discount ? <ChevronUp className="w-4 h-4 text-gray-800 stroke-[2.5]" /> : <ChevronDown className="w-4 h-4 text-gray-800 stroke-[2.5]" />}
@@ -352,10 +352,10 @@ export default function Vouchers() {
                     </div>
 
                     {/* COLUMN 2: CENTER CONTENT (CATEGORIES & PRODUCT CARDS) */}
-                    <main className="lg:col-span-6 w-full flex flex-col gap-6">
+                    <main className=" lg:col-span-6 max-w-[930px] w-full flex flex-col gap-2 ">
 
                         {/* Horizontal Categories List */}
-                        <div className="w-full bg-white rounded-2xl p-2">
+                        <div className=" w-full bg-white rounded-2xl p-2">
                             <div className="flex items-center space-x-3 overflow-x-auto scrollbar-none py-1 px-2">
                                 {categoriesList.map((category) => {
                                     const isActive = activeCategory === category.id;
