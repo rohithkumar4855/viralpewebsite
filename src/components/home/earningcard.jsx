@@ -4,8 +4,9 @@ import { earningsData } from "../../../data"; // Adjust this import path based o
 
 const EarningCard = ({ icon, title, amount, subtitle }) => {
   return (
-    <div className="flex flex-col p-3 border border-[#000000]/10 rounded-2xl bg-white shadow-sm transition-shadow">
-      <div className="flex items-center gap-2 mb-3">
+    <div className="flex flex-col max-w-[244px] max-h-[113px] w-full p-3 border border-[#000000]/10 rounded-2xl bg-white shadow-sm transition-shadow">
+      <div className="flex items-center gap-2 ">
+       
         <div className="text-(--primary-red) p-1.5 rounded-[9.9px] flex items-center justify-center">
           <img
             src={icon}
@@ -13,7 +14,8 @@ const EarningCard = ({ icon, title, amount, subtitle }) => {
             className="object-contain w-10.25 h-10.25"
           />
         </div>
-        <h4 className="text-[12px] font-semibold text-[#6F0014] uppercase tracking-wider">
+        
+        <h4 className="text-[12px] font-semibold text-[#6F0014] uppercase tracking-wider ">
           {title}
         </h4>
       </div>

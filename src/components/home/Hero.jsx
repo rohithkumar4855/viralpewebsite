@@ -86,7 +86,7 @@ export default function Heropage() {
                                         <img
                                             src={item.icon}
                                             alt={item.alt}
-                                            className="w-13 h-13 object-contain mb-2"
+                                            className=" object-contain mb-2"
                                         />
                                         <p className="text-sm font-medium flex flex-col items-center text-gray-800 leading-tight">
                                             <span>{item.title.split(" ")[0]}</span>
@@ -194,7 +194,7 @@ export default function Heropage() {
                 <div className="w-110 min-w-110 h-66 bg-[#FFEDEE] rounded-2xl flex flex-row relative overflow-hidden shrink-0 shadow-sm">
 
                     {/* --- Left Text Content --- */}
-                    <div className="flex flex-col pt-8 pl-7 z-10 w-[240px]">
+                    <div className="flex flex-col pt-[23px] pl-[19px] z-10 w-[240px]">
                         <h2 className="font-bold text-[26px] leading-[1.2] text-[#222222] mb-3">
                             Recharge or Pay<br />Mobile Bill
                         </h2>
@@ -204,33 +204,55 @@ export default function Heropage() {
                         </p>
 
                         <div>
-                            <Button className="rounded-lg py-[8px] px-[14px] flex flex-row items-center gap-[6px]  text-white hover:bg-[#721c22] transition-colors shadow-sm w-fit">
+                            <button className="rounded-lg py-[8px] px-[5px] flex flex-row items-center gap-[6px]  text-white bg-[#721c22] transition-colors shadow-sm  max-w-[173px] max-h-[30px] w-full">
                                 <span className="text-[12px] font-medium leading-none mt-[1px]">Download ViralPe App</span>
                                 <div className="flex flex-row items-center gap-[4px]">
                                     <img src={playstoreicon} alt="Play Store" className="w-[14px] h-[14px] object-contain" />
                                     <img src={Appleicon} alt="Apple" className="w-[14px] h-[14px] object-contain pb-[1px]" />
                                 </div>
-                            </Button>
+                            </button>
                         </div>
                     </div>
+                    <div className="relative flex items-start">
 
-                    <div className="absolute top-[80px] left-[235px] w-[180px] h-[353.67px] bg-white rounded-[25.2px] border-[6.3px] border-[#222222] z-0 flex flex-col items-center pt-[30px] shadow-sm">
-                        <img
-                            src="/images/logoname.png"
-                            alt="ViralPe Logo"
-                            className="w-[90px] h-auto object-contain"
-                        />
+                        {/* Mobile Card */}
+                        <div className="w-[180px] h-[353.67px]  mr-[25px] bg-white rounded-[25.2px] border-[6.3px] border-[#222222] flex flex-col items-center mt-[70px] shadow-sm relative">
+
+                            <img
+                                src="/images/logoname.png"
+                                alt="ViralPe Logo"
+                                className=" object-contain mt-4"
+                            />
+                        </div>
+
+                        {/* Text Boxes */}
+                        <div className="flex flex-col gap-2 absolute left-[px] right-[10px] mt-[150px]">
+
+                            {/* Top Text Box */}
+                            <div className="bg-white w-[222px] h-[31px] rounded-[4px] flex items-center justify-center  shadow-sm">
+                                <h1 className="text-[10px] text-[#222222CC] ">
+                                    Collective earnings from our user community                                </h1>
+                            </div>
+
+                            {/* Bottom Text Box */}
+                            <div className="bg-white w-[222px] h-[31px] rounded-[4px] flex items-center justify-center shadow-sm">
+                                <h1 className="text-[10px] text-[#222222CC] ">
+                                    Earn cashback on every recharge & bill payment
+                                </h1>
+                            </div>
+
+                        </div>
                     </div>
-                    <img
+                    {/* <img
                         src={Frame_1}
                         alt="Frame_1"
-                        className="absolute top-[155px] left-[200px] w-[210px] h-auto object-contain z-10 drop-shadow-md"
+                        className="absolute top-[125px] left-[207px] max-w-[222px] w-full object-contain z-10 "
                     />
                     <img
                         src={Frame_2}
                         alt="Frame_2"
-                        className="absolute top-[210px] left-[200px] w-[210px] h-auto object-contain z-10 drop-shadow-md"
-                    />
+                        className="absolute top-[170px] left-[207px] max-w-[222px] w-full object-contain z-10 drop-shadow-md"
+                    /> */}
                 </div>
             </div>
         </section>

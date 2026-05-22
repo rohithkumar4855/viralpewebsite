@@ -5,28 +5,24 @@ export const earningsData = [
     icon: "/images/location.png", // Direct root path
     title: "Zonal Royalty",
     amount: "₹ 25,000.00",
-    subtitle: "Pending Claim",
   },
   {
     id: 2,
     icon: "/images/vendor.png",
     title: "Vendor Royalty",
     amount: "₹ 25,000.00",
-    subtitle: "Pending Claim",
   },
   {
     id: 3,
     icon: "/images/gift.png",
     title: "Total Cashback",
     amount: "₹ 25,000.00",
-    subtitle: "Pending Claim",
   },
   {
     id: 4,
     icon: "/images/Overlay.png",
     title: "Total Referral Bonus",
     amount: "₹ 25,000.00",
-    subtitle: "Pending Claim",
   },
 ];
 

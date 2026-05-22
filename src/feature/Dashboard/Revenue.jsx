@@ -31,7 +31,7 @@ export default function Revenue() {
           <img
             src={Graph}
             alt="Graph"
-            className="w-[46px] h-[46px] object-contain"
+            className="w-[46px] h-[46px] object-contain "
           />
 
           <div className="flex flex-col">
@@ -76,11 +76,11 @@ export default function Revenue() {
         </div>
 
         {/* Right Graph */}
-        <div>
+        <div className="mr-20">
           <img
             src={Graphbar}
             alt="Graph Bar"
-            className="w-[120px] object-contain"
+            className="w-[120px] object-contain "
           />
         </div>
 

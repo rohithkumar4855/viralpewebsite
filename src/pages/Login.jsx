@@ -19,7 +19,7 @@ export default function loginpage() {
   };
 
   return (
-    <div className="pt-36 bg-gray-50 min-h-screen">
+    <div className="pt-20 bg-gray-50 min-h-screen">
       <Home />
       <Revenue />
       <Heropage />

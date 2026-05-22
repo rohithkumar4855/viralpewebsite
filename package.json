@@ -33,5 +33,13 @@
   "main": "eslint.config.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://devallamanirohit@bitbucket.org/Bharath0388/viralpe_frontend_website.git"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/Bharath0388/viralpe_frontend_website/issues"
+  },
+  "homepage": "https://bitbucket.org/Bharath0388/viralpe_frontend_website#readme"
 }
