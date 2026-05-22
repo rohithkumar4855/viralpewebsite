@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Vouchers() {
     // 1. Navigation Tabs Configuration
-      const navigate = useNavigate();
+    const navigate = useNavigate();
     const [currentNav, setCurrentNav] = useState('Vouchers');
     const navItems = [
         { id: 'All', label: 'All' },
@@ -56,25 +56,25 @@ export default function Vouchers() {
         { id: 1, brand: 'Myntra', logo: Myntra, tag: 'Get ₹50 Cashback', isPromo: true, category: 'Fashion', price: "Starting Price from ₹200", discount: 5 },
         { id: 2, brand: 'Starbucks', logo: StarBucks, tag: '5% Cashback', isPromo: false, category: 'Food', price: "Starting Price from ₹200", discount: 5 },
         { id: 3, brand: 'Nike', logo: Nike, tag: 'Starting Price from ₹200', isPromo: false, noHeaderTag: true, category: 'Fashion', price: "Starting Price from ₹200", discount: 12 },
-        { id: 4, brand: 'Myntra',logo : Myntra, tag: 'Get ₹50 Cashback', isPromo: true, category: 'Fashion', price: "Starting Price from ₹200", discount: 4 },
+        { id: 4, brand: 'Myntra', logo: Myntra, tag: 'Get ₹50 Cashback', isPromo: true, category: 'Fashion', price: "Starting Price from ₹200", discount: 4 },
         { id: 5, brand: 'Starbucks', logo: StarBucks, tag: '5% Cashback', isPromo: false, category: 'Food', price: "Starting Price from ₹200", discount: 5 },
-        { id: 6, brand: 'Nike', logo:Nike, tag: 'Starting Price from ₹200', isPromo: false, noHeaderTag: true, category: 'Fashion', price: "Starting Price from ₹200", discount: 14 },
+        { id: 6, brand: 'Nike', logo: Nike, tag: 'Starting Price from ₹200', isPromo: false, noHeaderTag: true, category: 'Fashion', price: "Starting Price from ₹200", discount: 14 },
         { id: 7, brand: 'Trends', logo: Trends, tag: 'Get ₹50 Cashback', isPromo: true, category: 'Fashion', price: "Starting Price from ₹200", discount: 3 },
         { id: 8, brand: 'Starbucks', logo: StarBucks, tag: '5% Cashback', isPromo: false, category: 'Food', price: "Starting Price from ₹200", discount: 5 },
         { id: 9, brand: 'Trends', logo: Trends, tag: '5% Cashback', isPromo: false, category: 'Fashion', price: "Starting Price from ₹200", discount: 8 },
-        { id: 10, brand: 'Nike', logo:Nike, tag: '10% OFF', isPromo: false, category: 'Beauty', price: "Starting Price from ₹200", discount: 10 },
-         { id: 11, brand: 'Starbucks', logo: StarBucks, tag: '5% Cashback', isPromo: false, category: 'Food', price: "Starting Price from ₹200", discount: 5 },
-        { id: 12, brand: 'Nike', logo:Nike, tag: 'Starting Price from ₹200', isPromo: false, noHeaderTag: true, category: 'Fashion', price: "Starting Price from ₹200", discount: 14 },
+        { id: 10, brand: 'Nike', logo: Nike, tag: '10% OFF', isPromo: false, category: 'Beauty', price: "Starting Price from ₹200", discount: 10 },
+        { id: 11, brand: 'Starbucks', logo: StarBucks, tag: '5% Cashback', isPromo: false, category: 'Food', price: "Starting Price from ₹200", discount: 5 },
+        { id: 12, brand: 'Nike', logo: Nike, tag: 'Starting Price from ₹200', isPromo: false, noHeaderTag: true, category: 'Fashion', price: "Starting Price from ₹200", discount: 14 },
         { id: 13, brand: 'Trends', logo: Trends, tag: 'Get ₹50 Cashback', isPromo: true, category: 'Fashion', price: "Starting Price from ₹200", discount: 3 },
         { id: 14, brand: 'Starbucks', logo: StarBucks, tag: '5% Cashback', isPromo: false, category: 'Food', price: "Starting Price from ₹200", discount: 5 },
         { id: 15, brand: 'Trends', logo: Trends, tag: '5% Cashback', isPromo: false, category: 'Fashion', price: "Starting Price from ₹200", discount: 8 },
-        { id: 16, brand: 'Nike', logo:Nike, tag: '10% OFF', isPromo: false, category: 'Beauty', price: "Starting Price from ₹200", discount: 10 },
-         { id: 17, brand: 'Starbucks', logo: StarBucks, tag: '5% Cashback', isPromo: false, category: 'Food', price: "Starting Price from ₹200", discount: 5 },
-        { id: 18, brand: 'Nike', logo:Nike, tag: 'Starting Price from ₹200', isPromo: false, noHeaderTag: true, category: 'Fashion', price: "Starting Price from ₹200", discount: 14 },
+        { id: 16, brand: 'Nike', logo: Nike, tag: '10% OFF', isPromo: false, category: 'Beauty', price: "Starting Price from ₹200", discount: 10 },
+        { id: 17, brand: 'Starbucks', logo: StarBucks, tag: '5% Cashback', isPromo: false, category: 'Food', price: "Starting Price from ₹200", discount: 5 },
+        { id: 18, brand: 'Nike', logo: Nike, tag: 'Starting Price from ₹200', isPromo: false, noHeaderTag: true, category: 'Fashion', price: "Starting Price from ₹200", discount: 14 },
         { id: 19, brand: 'Trends', logo: Trends, tag: 'Get ₹50 Cashback', isPromo: true, category: 'Fashion', price: "Starting Price from ₹200", discount: 3 },
         { id: 20, brand: 'Starbucks', logo: StarBucks, tag: '5% Cashback', isPromo: false, category: 'Food', price: "Starting Price from ₹200", discount: 5 },
         { id: 21, brand: 'Trends', logo: Trends, tag: '5% Cashback', isPromo: false, category: 'Fashion', price: "Starting Price from ₹200", discount: 8 },
-        { id: 22, brand: 'Nike', logo:Nike, tag: '10% OFF', isPromo: false, category: 'Beauty', price: "Starting Price from ₹200", discount: 10 },
+        { id: 22, brand: 'Nike', logo: Nike, tag: '10% OFF', isPromo: false, category: 'Beauty', price: "Starting Price from ₹200", discount: 10 },
         { id: 23, brand: 'Myntra', logo: Myntra, tag: 'Get ₹50 Cashback', isPromo: true, category: 'Fashion', price: "Starting Price from ₹200", discount: 5 },
         { id: 24, brand: 'Starbucks', logo: StarBucks, tag: '5% Cashback', isPromo: false, category: 'Food', price: "Starting Price from ₹200", discount: 5 },
         { id: 25, brand: 'Nike', logo: Nike, tag: 'Starting Price from ₹200', isPromo: false, noHeaderTag: true, category: 'Fashion', price: "Starting Price from ₹200", discount: 12 },
@@ -211,8 +211,14 @@ export default function Vouchers() {
                             {/* Section 1: Brands */}
                             <div className="mb-4">
                                 <button onClick={() => toggleSection('brands')} className="flex items-center justify-between w-full py-2 text-left">
+
                                     <span className="text-[15px] font-bold text-gray-900">
-                                        Brands <span className="text-[#901C27]-700 font-semibold">({String(selectedBrands.length).padStart(2, '0')})</span>
+                                        Brands{" "}
+                                        {selectedBrands.length > 0 && (
+                                            <span className="text-[#901C27] font-semibold">
+                                                ({String(selectedBrands.length).padStart(2, "0")})
+                                            </span>
+                                        )}
                                     </span>
                                     {sections.brands ? <ChevronUp className="w-4 h-4 text-gray-800 stroke-[2.5]" /> : <ChevronDown className="w-4 h-4 text-gray-800 stroke-[2.5]" />}
                                 </button>
@@ -382,7 +388,7 @@ export default function Vouchers() {
                             {displayVouchers.map((voucher) => (
                                 <div
                                     key={voucher.id}
-                                     onClick={() => navigate('/voucher-details',{ state: voucher })}
+                                    onClick={() => navigate('/voucher-details', { state: voucher })}
                                     className=" rounded-[15.45px] bg-white border border-gray-100/70 pt-6 p-2 shadow-sm hover:shadow-md transition-all flex flex-col items-center relative min-h-[157px] max-w-[163px]"
                                 >
                                     {/* Cashback Header Badges */}
@@ -396,7 +402,7 @@ export default function Vouchers() {
                                             {voucher.tag}
                                         </div>
                                     )}
-                                    
+
                                     {/* 1. FIXED: Image gets its own flexible container */}
                                     <div className=" mt-3 flex items-center justify-center shrink-0">
                                         <img
@@ -411,11 +417,11 @@ export default function Vouchers() {
                                         <h3 className="text-[17px] font-bold text-gray-900 leading-none">
                                             {voucher.brand}
                                         </h3>
-                                     
+
                                     </div>
-                                      <p className="text-[11px] text-[#6B7280] tracking-tight mt-1 "> 
-                                            {voucher.price}
-                                        </p>
+                                    <p className="text-[11px] text-[#6B7280] tracking-tight mt-1 ">
+                                        {voucher.price}
+                                    </p>
 
                                     {/* Decorative Separator Line pushed to bottom */}
                                 </div>
