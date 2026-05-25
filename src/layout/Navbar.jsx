@@ -23,6 +23,7 @@ import fastagiconSvg from "../../public/images/fasttag.svg";
 import refer from "../../public/images/refericon.svg";
 import transactions from "../../public/images/transcations.svg";
 
+
 // --- Public Navbar Specific Imports (PNGs) ---
 import MoneyReceivePng from "../../public/images/money-receive.png";
 import dthiconPng from "../../public/images/dthicon.png";
@@ -139,7 +140,7 @@ function UserNavbar({ user }) {
                       My Vouchers
                     </button>
                     <button
-                      onClick={() => { setIsProfileOpen(false); navigate("/profile"); }}
+                      onClick={() => { setIsProfileOpen(false); navigate("/wallet"); }}
                       className="w-full text-left px-3 py-2.5 text-gray-700 hover:bg-[#FFEDEE] hover:text-[#901c27] rounded-lg font-medium transition-all duration-200 cursor-pointer"
                     >
                       My Wallet
@@ -183,7 +184,7 @@ function UserNavbar({ user }) {
                   navigate(item.path);
                 }
               }}
-              className="flex items-center gap-2 px-4 py-2.5 text-gray-600 rounded-full hover:bg-[#FFEDEE] hover:text-[#961a20] cursor-pointer transition-all duration-200 group"
+              className="flex items-center gap-2 px-3 py-1 text-gray-600 rounded-[10px] hover:bg-[#FFEDEE] hover:text-[#961a20] cursor-pointer transition-all duration-100 group"
             >
               <span className="text-[#961a20] opacity-80 group-hover:opacity-100 transition-opacity">{item.icon}</span>
               <span className="font-medium text-[14px] whitespace-nowrap">{item.name}</span>

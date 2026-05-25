@@ -17,6 +17,8 @@ import Transcations from "../feature/Dashboard/Transcations"
 import Fastagdetails from "../feature/Dashboard/Fasttagdetails"
 import UserVouchers from "../feature/Dashboard/UserVouchers"
 import Vouchercode from "../feature/Dashboard/VoucherCode"
+import Wallet from "../feature/Dashboard/Wallet"
+
 export default function AppRoutes() {
   return (
     <Routes>
@@ -38,6 +40,9 @@ export default function AppRoutes() {
       <Route path="/fastag-details" element={< Fastagdetails />} />
       <Route path="/my-vouchers" element={< UserVouchers  />} />
        <Route path="/voucher-code" element={< Vouchercode  />} />
+      <Route path="/wallet" element={< Wallet  />} />
+
+       
     </Routes>
   );
 }
